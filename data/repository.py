@@ -1,11 +1,11 @@
 import pandas as pd
 
-class LoanRepository:
+class AdverseRepository:
     def __init__(self):
-        self.loanData = None
+        self.adverseData = None
 
-    def get_loan_data(self) -> pd.DataFrame:
+    def get_adverse_data(self) -> pd.DataFrame:
         """Fetch data"""
-        if self.loanData is None:
-            self.loanData = pd.read_csv("Loan_Defaul.csv")
-        return self.loanData
+        if self.adverseData is None:
+            self.adverseData = pd.read_csv("data/Adverse_Events.csv")
+        return self.adverseData
